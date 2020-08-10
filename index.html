@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heatmaps</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8GZkmx1-3Cr0kNvx-vdUaNgoaYSd6f7s&callback=initMap&libraries=visualization"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <select onchange="selectValue()" id="dataChanger">
+        <option value="all">Все записи</option>
+        <option value="online">Онлайн записи</option>
+      </select>
+      <button onclick="toggleHeatmap()">Отключить метки</button>
+      <button onclick="changeGradient()">Изменить градиент</button>
+      <button onclick="changeRadius()">Изменить радиус</button>
+      <button onclick="changeOpacity()">Изменить прозрачность</button>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
