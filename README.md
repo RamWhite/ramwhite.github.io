@@ -1,1 +1,0 @@
-# ramwhite.github.io
